@@ -28,3 +28,4 @@ package-lock.json
 # Misc
 .DS_Store
 .cache
+.env
