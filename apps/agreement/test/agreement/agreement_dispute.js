@@ -4,11 +4,9 @@ const { AGREEMENT_EVENTS } = require('../helpers/utils/events')
 const { RULINGS, CHALLENGES_STATE } = require('../helpers/utils/enums')
 
 const { padLeft } = require('web3-utils')
-const { bn, bigExp, getEventArgument, injectWeb3, injectArtifacts } = require('@aragon/contract-helpers-test')
+const { bn, bigExp, getEventArgument } = require('@aragon/contract-helpers-test')
 const { assertBn, assertRevert, assertEvent, assertAmountOfEvents } = require('@aragon/contract-helpers-test/src/asserts')
 
-injectWeb3(web3)
-injectArtifacts(artifacts)
 
 contract('Agreement', ([_, someone, submitter, challenger]) => {
   let disputable, actionId
