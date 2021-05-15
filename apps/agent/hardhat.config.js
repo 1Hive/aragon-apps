@@ -114,7 +114,6 @@ module.exports = {
     frame: {
       url: "http://localhost:1248",
       httpHeaders: { origin: "hardhat" },
-      ensRegistry: "0x4E065c622d584Fbe5D9078C3081840155FA69581",
     },
   },
   ipfs: {

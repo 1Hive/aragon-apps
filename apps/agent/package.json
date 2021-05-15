@@ -7,7 +7,6 @@
     "Jorge Izquierdo <jorge@aragon.one>"
   ],
   "files": [
-    "/abi",
     "/arapp.json",
     "/artifacts",
     "/contracts",
