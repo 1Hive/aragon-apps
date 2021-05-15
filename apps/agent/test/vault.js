@@ -2,5 +2,5 @@
 const runSharedVaultTests = require('@aragon/apps-vault/test/vault_shared')
 
 contract('Agent app (Vault compatibility)', (accounts) => {
-  runSharedVaultTests('Agent', { accounts, artifacts, web3 })
+  runSharedVaultTests('Agent', { accounts })
 })
