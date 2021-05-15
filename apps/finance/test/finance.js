@@ -1,10 +1,8 @@
 const ERRORS = require('./helpers/errors')
 const { newDao, installNewApp, getInstalledApp } = require('@aragon/contract-helpers-test/src/aragon-os')
 const { assertBn, assertRevert, assertEvent, assertAmountOfEvents } = require('@aragon/contract-helpers-test/src/asserts')
-const { ONE_DAY, ZERO_ADDRESS, MAX_UINT64, bn, getEventArgument, injectWeb3, injectArtifacts } = require('@aragon/contract-helpers-test')
+const { ONE_DAY, ZERO_ADDRESS, MAX_UINT64, bn, getEventArgument } = require('@aragon/contract-helpers-test')
 
-injectWeb3(web3)
-injectArtifacts(artifacts)
 
 const Finance = artifacts.require('FinanceMock')
 const Vault = artifacts.require('Vault')
