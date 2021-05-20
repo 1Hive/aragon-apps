@@ -39,60 +39,46 @@ module.exports = {
     appContractName: "DisputableVoting",
     appRoles: [
       {
-        "name": "Create new votes",
-        "id": "CREATE_VOTES_ROLE",
-        "params": []
+        name: "Create new votes",
+        id: "CREATE_VOTES_ROLE",
+        params: [],
       },
       {
-        "name": "Challenge votes",
-        "id": "CHALLENGE_ROLE",
-        "params": []
+        name: "Challenge votes",
+        id: "CHALLENGE_ROLE",
+        params: [],
       },
       {
-        "name": "Modify vote time",
-        "id": "CHANGE_VOTE_TIME_ROLE",
-        "params": [
-          "New vote time"
-        ]
+        name: "Modify vote time",
+        id: "CHANGE_VOTE_TIME_ROLE",
+        params: ["New vote time"],
       },
       {
-        "name": "Modify support",
-        "id": "CHANGE_SUPPORT_ROLE",
-        "params": [
-          "New required support"
-        ]
+        name: "Modify support",
+        id: "CHANGE_SUPPORT_ROLE",
+        params: ["New required support"],
       },
       {
-        "name": "Modify quorum",
-        "id": "CHANGE_QUORUM_ROLE",
-        "params": [
-          "New minimum acceptance quorum"
-        ]
+        name: "Modify quorum",
+        id: "CHANGE_QUORUM_ROLE",
+        params: ["New minimum acceptance quorum"],
       },
       {
-        "name": "Modify delegated voting period",
-        "id": "CHANGE_DELEGATED_VOTING_PERIOD_ROLE",
-        "params": [
-          "New delegated voting period"
-        ]
+        name: "Modify delegated voting period",
+        id: "CHANGE_DELEGATED_VOTING_PERIOD_ROLE",
+        params: ["New delegated voting period"],
       },
       {
-        "name": "Modify quiet ending configuration",
-        "id": "CHANGE_QUIET_ENDING_ROLE",
-        "params": [
-          "New quiet ending period",
-          "New quiet ending extension"
-        ]
+        name: "Modify quiet ending configuration",
+        id: "CHANGE_QUIET_ENDING_ROLE",
+        params: ["New quiet ending period", "New quiet ending extension"],
       },
       {
-        "name": "Modify execution delay",
-        "id": "CHANGE_EXECUTION_DELAY_ROLE",
-        "params": [
-          "New execution delay"
-        ]
-      }
+        name: "Modify execution delay",
+        id: "CHANGE_EXECUTION_DELAY_ROLE",
+        params: ["New execution delay"],
+      },
     ],
-    appBuildOutputPath: "app/build/",
   },
   networks: {
     hardhat: {
