@@ -3,11 +3,8 @@ const { RULINGS } = require('../helpers/utils/enums')
 const { AGREEMENT_ERRORS } = require('../helpers/utils/errors')
 const { AGREEMENT_EVENTS } = require('../helpers/utils/events')
 
-const { injectWeb3, injectArtifacts } = require('@aragon/contract-helpers-test')
 const { assertBn, assertRevert, assertEvent, assertAmountOfEvents } = require('@aragon/contract-helpers-test/src/asserts')
 
-injectWeb3(web3)
-injectArtifacts(artifacts)
 
 contract('Agreement', ([_, submitter]) => {
   let disputable, actionId, disputableActionId

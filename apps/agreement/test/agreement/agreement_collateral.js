@@ -5,6 +5,7 @@ const { ARAGON_OS_ERRORS } = require('../helpers/utils/errors')
 const { ONE_DAY, bigExp, bn } = require('@aragon/contract-helpers-test')
 const { assertAmountOfEvents, assertEvent, assertBn, assertRevert } = require('@aragon/contract-helpers-test/src/asserts')
 
+
 contract('Agreement', ([_, owner, someone]) => {
   let disputable
 

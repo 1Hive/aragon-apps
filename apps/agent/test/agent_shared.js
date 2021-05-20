@@ -5,13 +5,10 @@ const { sha3 } = require('web3-utils')
 const { hash: namehash } = require('eth-ens-namehash')
 const { assertRevert, assertBn, assertAmountOfEvents } = require('@aragon/contract-helpers-test/src/asserts')
 const { newDao, installNewApp, getInstalledApp, encodeCallScript } = require('@aragon/contract-helpers-test/src/aragon-os')
-const { EMPTY_BYTES, ZERO_ADDRESS, bn, injectWeb3, injectArtifacts } = require('@aragon/contract-helpers-test')
+const { EMPTY_BYTES, ZERO_ADDRESS, bn } = require('@aragon/contract-helpers-test')
 
 // Allow for sharing this test across other agent implementations and subclasses
-module.exports = (agentName, { accounts, artifacts, web3 }) => {
-  injectWeb3(web3)
-  injectArtifacts(artifacts)
-
+module.exports = (agentName, { accounts }) => {
   const ExecutionTarget = artifacts.require('ExecutionTarget')
   const DesignatedSigner = artifacts.require('DesignatedSigner')
   const DestinationMock = artifacts.require('DestinationMock')

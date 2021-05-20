@@ -1,10 +1,8 @@
 const ERRORS = require('./helpers/errors')
 const { assertBn, assertRevert } = require('@aragon/contract-helpers-test/src/asserts')
-const { injectWeb3, injectArtifacts, ZERO_ADDRESS } = require('@aragon/contract-helpers-test')
+const { ZERO_ADDRESS } = require('@aragon/contract-helpers-test')
 const { ANY_ENTITY, newDao, installNewApp, encodeCallScript } = require('@aragon/contract-helpers-test/src/aragon-os')
 
-injectWeb3(web3)
-injectArtifacts(artifacts)
 
 const TokenManager = artifacts.require('TokenManagerMock')
 const ExecutionTarget = artifacts.require('ExecutionTarget')

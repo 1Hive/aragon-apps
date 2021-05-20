@@ -2,11 +2,9 @@ const deployer = require('../helpers/utils/deployer')(web3, artifacts)
 const { AGREEMENT_EVENTS } = require('../helpers/utils/events')
 const { ARAGON_OS_ERRORS, AGREEMENT_ERRORS } = require('../helpers/utils/errors')
 
-const { ZERO_ADDRESS, bigExp, injectWeb3, injectArtifacts } = require('@aragon/contract-helpers-test')
+const { ZERO_ADDRESS, bigExp } = require('@aragon/contract-helpers-test')
 const { assertBn, assertEvent, assertRevert } = require('@aragon/contract-helpers-test/src/asserts')
 
-injectWeb3(web3)
-injectArtifacts(artifacts)
 
 const ARBITRABLE_INTERFACE = '0x88f3ee69'
 const ARAGON_APP_INTERFACE = '0x54053e6c'
