@@ -22,7 +22,7 @@ module.exports = {
             runs: 10000,
           },
         },
-      }
+      },
     ],
   },
   aragon: {
@@ -30,26 +30,20 @@ module.exports = {
     appContractName: "Voting",
     appRoles: [
       {
-        "name": "Create new votes",
-        "id": "CREATE_VOTES_ROLE",
-        "params": []
+        name: "Create new votes",
+        id: "CREATE_VOTES_ROLE",
+        params: [],
       },
       {
-        "name": "Modify support",
-        "id": "MODIFY_SUPPORT_ROLE",
-        "params": [
-          "New support",
-          "Current support"
-        ]
+        name: "Modify support",
+        id: "MODIFY_SUPPORT_ROLE",
+        params: ["New support", "Current support"],
       },
       {
-        "name": "Modify quorum",
-        "id": "MODIFY_QUORUM_ROLE",
-        "params": [
-          "New quorum",
-          "Current quorum"
-        ]
-      }
+        name: "Modify quorum",
+        id: "MODIFY_QUORUM_ROLE",
+        params: ["New quorum", "Current quorum"],
+      },
     ],
     appBuildOutputPath: "app/build/",
   },
@@ -95,6 +89,11 @@ module.exports = {
       url: node_url("polygon"),
       accounts: accounts("polygon"),
       ensRegistry: "0x4E065c622d584Fbe5D9078C3081840155FA69581",
+    },
+    arbtest: {
+      url: node_url("arbtest"),
+      accounts: accounts("arbtest"),
+      ensRegistry: "0x73ddD4B38982aB515daCf43289B41706f9A39199",
     },
     frame: {
       url: "http://localhost:1248",

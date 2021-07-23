@@ -94,6 +94,11 @@ module.exports = {
       accounts: accounts("polygon"),
       ensRegistry: "0x4E065c622d584Fbe5D9078C3081840155FA69581",
     },
+    arbtest: {
+      url: node_url("arbtest"),
+      accounts: accounts("arbtest"),
+      ensRegistry: "0x73ddD4B38982aB515daCf43289B41706f9A39199",
+    },
     frame: {
       url: "http://localhost:1248",
       httpHeaders: { origin: "hardhat" },
