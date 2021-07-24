@@ -13,7 +13,7 @@
     "/test"
   ],
   "scripts": {
-    "compile": "hardhat compile --force",
+    "compile": "hardhat compile",
     "chain": "hardhat node",
     "build": "cd app && yarn build",
     "lint": "solium --dir ./contracts",

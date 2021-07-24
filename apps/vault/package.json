@@ -16,7 +16,7 @@
     "/test"
   ],
   "scripts": {
-    "compile": "hardhat compile --force",
+    "compile": "hardhat compile",
     "chain": "hardhat node",
     "lint": "solium --dir ./contracts",
     "test": "hardhat test",
