@@ -16,12 +16,11 @@
     "/test"
   ],
   "scripts": {
-    "console": "hardhat console",
     "compile": "hardhat compile --force",
-    "devchain": "hardhat node",
+    "chain": "hardhat node",
     "lint": "solium --dir ./contracts",
     "test": "hardhat test",
-    "test:gas": "REPORT_GAS=true yarn test --network localhost",
+    "test:gas": "REPORT_GAS=true yarn test",
     "coverage": "hardhat coverage",
     "publish:major": "hardhat publish major",
     "publish:minor": "hardhat publish minor",
