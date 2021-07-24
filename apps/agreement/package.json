@@ -5,7 +5,8 @@
   "license": "(GPL-3.0-or-later OR AGPL-3.0-or-later)",
   "files": [
     "/arapp.json",
-    "/artifacts",
+    "/artifacts/contracts/**/*.json",
+    "!/artifacts/contracts/**/*.dbg.json",
     "/contracts",
     "/test"
   ],
