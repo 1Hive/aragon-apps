@@ -22,7 +22,7 @@ module.exports = {
             runs: 10000,
           },
         },
-      }
+      },
     ],
   },
   aragon: {
@@ -30,65 +30,56 @@ module.exports = {
     appContractName: "Finance",
     appRoles: [
       {
-        "name": "Create new payments",
-        "id": "CREATE_PAYMENTS_ROLE",
-        "params": [
+        name: "Create new payments",
+        id: "CREATE_PAYMENTS_ROLE",
+        params: [
           "Token address",
           "Receiver address",
           "Token amount",
           "Payment interval",
           "Max repeats",
-          "Initial payment time"
-        ]
+          "Initial payment time",
+        ],
       },
       {
-        "name": "Change period duration",
-        "id": "CHANGE_PERIOD_ROLE",
-        "params": [
-          "New period duration",
-          "Old period duration"
-        ]
+        name: "Change period duration",
+        id: "CHANGE_PERIOD_ROLE",
+        params: ["New period duration", "Old period duration"],
       },
       {
-        "name": "Change budgets",
-        "id": "CHANGE_BUDGETS_ROLE",
-        "params": [
+        name: "Change budgets",
+        id: "CHANGE_BUDGETS_ROLE",
+        params: [
           "Token address",
           "New budget amount",
           "Old budget amount",
-          "Has budget flag"
-        ]
+          "Has budget flag",
+        ],
       },
       {
-        "name": "Execute payments",
-        "id": "EXECUTE_PAYMENTS_ROLE",
-        "params": [
-          "Payment ID",
-          "Payment amount"
-        ]
+        name: "Execute payments",
+        id: "EXECUTE_PAYMENTS_ROLE",
+        params: ["Payment ID", "Payment amount"],
       },
       {
-        "name": "Manage payments",
-        "id": "MANAGE_PAYMENTS_ROLE",
-        "params": [
-          "Payment ID",
-          "Payment active"
-        ]
-      }
+        name: "Manage payments",
+        id: "MANAGE_PAYMENTS_ROLE",
+        params: ["Payment ID", "Payment active"],
+      },
     ],
     appDependencies: [
       {
-        "appName": "vault.aragonpm.eth",
-        "version": "^4.0.0",
-        "initParam": "_vault",
-        "state": "vault",
-        "requiredPermissions": [
+        appName: "vault.aragonpm.eth",
+        version: "^4.0.0",
+        initParam: "_vault",
+        state: "vault",
+        requiredPermissions: [
           {
-            "name": "TRANSFER_ROLE",
-            "params": "*"
-          }
-        ]
-      }
+            name: "TRANSFER_ROLE",
+            params: "*",
+          },
+        ],
+      },
     ],
     appBuildOutputPath: "app/build/",
   },
@@ -135,6 +126,11 @@ module.exports = {
       accounts: accounts("polygon"),
       ensRegistry: "0x4E065c622d584Fbe5D9078C3081840155FA69581",
     },
+    mumbai: {
+      url: node_url("mumbai"),
+      accounts: accounts("mumbai"),
+      ensRegistry: "0xB1576a9bE5EC445368740161174f3Dd1034fF8be",
+    },
     arbtest: {
       url: node_url("arbtest"),
       accounts: accounts("arbtest"),
@@ -143,9 +139,12 @@ module.exports = {
     frame: {
       url: "http://localhost:1248",
       httpHeaders: { origin: "hardhat" },
+      timeout: 0,
+      gas: 0,
     },
   },
   ipfs: {
+    gateway: "https://ipfs.blossom.software/",
     pinata: {
       key: process.env.PINATA_KEY || "",
       secret: process.env.PINATA_SECRET_KEY || "",
