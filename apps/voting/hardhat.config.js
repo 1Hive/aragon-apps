@@ -90,6 +90,11 @@ module.exports = {
       accounts: accounts("polygon"),
       ensRegistry: "0x4E065c622d584Fbe5D9078C3081840155FA69581",
     },
+    mumbai: {
+      url: node_url("mumbai"),
+      accounts: accounts("mumbai"),
+      ensRegistry: "0xB1576a9bE5EC445368740161174f3Dd1034fF8be",
+    },
     arbtest: {
       url: node_url("arbtest"),
       accounts: accounts("arbtest"),
@@ -98,9 +103,12 @@ module.exports = {
     frame: {
       url: "http://localhost:1248",
       httpHeaders: { origin: "hardhat" },
+      timeout: 0,
+      gas: 0,
     },
   },
   ipfs: {
+    gateway: "https://ipfs.blossom.software/",
     pinata: {
       key: process.env.PINATA_KEY || "",
       secret: process.env.PINATA_SECRET_KEY || "",
