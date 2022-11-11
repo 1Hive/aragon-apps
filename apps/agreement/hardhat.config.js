@@ -37,7 +37,7 @@ module.exports = {
     ],
   },
   aragon: {
-    appEnsName: "agreement.open.aragonpm.eth",
+    appEnsName: "agreement.aragonpm.eth",
     appContractName: "Agreement",
     appRoles: [
       {
