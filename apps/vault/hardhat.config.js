@@ -91,8 +91,13 @@ module.exports = {
       accounts: accounts("arbtest"),
       ensRegistry: "0x73ddD4B38982aB515daCf43289B41706f9A39199",
     },
+    optimism: {
+      url: node_url("optimism"),
+      accounts: accounts("optimism"),
+      ensRegistry: "0x6f2CA655f58d5fb94A08460aC19A552EB19909FD",
+    },
     frame: {
-      url: "http://localhost:1248",
+      url: 'http://127.0.0.1:1248',
       httpHeaders: { origin: "hardhat" },
       timeout: 0,
       gas: 0,
