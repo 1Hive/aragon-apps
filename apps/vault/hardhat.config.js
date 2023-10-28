@@ -104,6 +104,7 @@ module.exports = {
     },
   },
   ipfs: {
+    url: "http://127.0.0.1:5001/",
     gateway: "https://ipfs.blossom.software/",
     pinata: {
       key: process.env.PINATA_KEY || "",

@@ -26,6 +26,18 @@
     ipfs-http-client "^50.0.0"
     node-fetch "^2.6.1"
 
+"@1hive/hardhat-aragon@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@1hive/hardhat-aragon/-/hardhat-aragon-0.1.4.tgz#3e70b622357db0bf322dbccc0c9df315f61b1a09"
+  integrity sha512-qMXMzpB+ka0M2RoMhfl4hYYG/ImsnGBWE7W9SD1KiVIS1wD97n0dia1zBdLgn+s6M4KMGjKUk2jImgHDqrQu7g==
+  dependencies:
+    "@solidity-parser/parser" "^0.16.1"
+    chalk "^4.1.1"
+    execa "^5.0.0"
+    fs-extra "^8.1.0"
+    ipfs-http-client "^50.0.0"
+    node-fetch "^2.6.1"
+
 "@aragon/contract-helpers-test@0.1.0", "@aragon/contract-helpers-test@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@aragon/contract-helpers-test/-/contract-helpers-test-0.1.0.tgz#5c5f09739a0b33ab66843bc4849cb2b997d88af0"
@@ -2120,6 +2132,13 @@
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/@solidity-parser/parser/-/parser-0.14.5.tgz#87bc3cc7b068e08195c219c91cd8ddff5ef1a804"
   integrity sha512-6dKnHZn7fg/iQATVEzqyUOyEidbn05q7YA2mQ9hC0MMXhhV3/JrsxmFSYZAcr7j1yUP700LLhTruvJ3MiQmjJg==
+  dependencies:
+    antlr4ts "^0.5.0-alpha.4"
+
+"@solidity-parser/parser@^0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@solidity-parser/parser/-/parser-0.16.1.tgz#f7c8a686974e1536da0105466c4db6727311253c"
+  integrity sha512-PdhRFNhbTtu3x8Axm0uYpqOy/lODYQK+MlYSgqIsq2L8SFYEHJPHNUiOTAJbDGzNjjr1/n9AcIayxafR/fWmYw==
   dependencies:
     antlr4ts "^0.5.0-alpha.4"
 
